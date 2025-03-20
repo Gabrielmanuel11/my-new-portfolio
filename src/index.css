@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .text-gradient {
+      background: linear-gradient(95.28deg, #9C83FF 57.09%, #FF9051 87.74%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient2 {
+      background: linear-gradient(95.28deg, #9C83FF 30.09%, #FF9051 87.74%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  @keyframes rotateWord {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  .word-rotator {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 1.2em; /* Adjust based on font size */
+    line-height: 1.2em; /* Adjust based on font size */
+  }
+  
+  .word-rotator span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    animation: rotateWord 2s ease-in-out infinite;
+  }
