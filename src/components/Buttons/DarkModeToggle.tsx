@@ -14,7 +14,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className={`absolute w-[68px] h-[34px] ${
+      className={`relative w-[68px] h-[34px] ${
         isDarkMode ? 'bg-[#2F0A42]' : 'bg-[#E7C0F8]'
       } rounded-full flex items-center px-1 transition-colors duration-300 ${
         isDarkMode ? 'justify-end' : 'justify-start'
