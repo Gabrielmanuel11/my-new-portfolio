@@ -4,10 +4,12 @@ import LanguageToggle from "../Buttons/LanguageToggle";
 
 const Header = () => {
   return (
-    <header className="absolute w-[100%] h-9 bg-transparent text-white mt-5 flex justify-between items-center px-4 grid-cols-3 left-8">
-      <DarkModeToggle />
-      <LanguageToggle />
-      < ContactButton />
+    <header className="relative max-w-7xl mx-auto h-9 bg-transparent text-white mt-5 flex justify-end items-center px-4 grid-cols-3">
+      <nav className="flex justify-between gap-8 mobileMini:gap-5">
+        <DarkModeToggle />
+        <LanguageToggle />
+        <ContactButton />
+      </nav>
     </header>
   );
 };

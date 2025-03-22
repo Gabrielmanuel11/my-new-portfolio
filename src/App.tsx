@@ -1,20 +1,19 @@
 import './App.css'
-import AboutMe from './components/AboutMe/AboutMe';
-import BackgroundPattern from './components/Background/BackgroundPattern';
-import Expirience from './components/Experience/Experience';
+//import AboutMe from './components/AboutMe/AboutMe';
+//import BackgroundPattern from './components/Background/BackgroundPattern';
+//import Expirience from './components/Experience/Experience';
 import Header from './components/Header/Header';
-import Welcome from './components/Welcome/Welcome';
+//import Welcome from './components/Welcome/Welcome';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return(
-    <div className="container relative min-h-[300vh]">
-      <BackgroundPattern />
+    <div className="">
       <Header />
-      <main className="pt-16">
-        < Welcome />
-        < AboutMe />
-        < Expirience />
+      <main className="">
+        
       </main>
+      <Footer />
     </div>
   );
 }
