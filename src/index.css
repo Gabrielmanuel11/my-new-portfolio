@@ -39,7 +39,6 @@
     position: relative;
     overflow: hidden;
     height: 1.2em; /* Adjust based on font size */
-    line-height: 1.2em; /* Adjust based on font size */
   }
   
   .word-rotator span {
@@ -48,5 +47,3 @@
     text-align: center;
     animation: rotateWord 2s ease-in-out infinite;
   }
-
-  

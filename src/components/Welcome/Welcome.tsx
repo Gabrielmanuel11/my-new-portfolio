@@ -13,17 +13,17 @@ const Welcome = () => {
   }, [words.length]);
 
     return(
-        <div className="absolute h-[103px] w-[401px] left-4 top-[107px] text-[#2F0A42]">
-            <h1 className="font-bold text-[24px]">
+        <div className="text-[#2F0A42] p-7">
+            <h1 className="font-bold text-[64px]">
                 Bem vindo ao meu Mundo!
             </h1>
-            <h2 className="font-semibold text-[23px]">
+            <h2 className="inline-flex font-semibold text-[32px] mobile:block">
                 Eu programo,<br />
-                <span className="text-gradient text-[26px] word-rotator">
+                <span className="text-gradient text-[32px] word-rotator w-[310px] mobile:w-auto mobileMini:text-[24px]">
                     {words[currentIndex]}
                 </span>
             </h2>
-            <h4 className="font-medium">
+            <h4 className="font-medium text-[20px]">
             Desenvolvedor de software apaixonado com foco no desenvolvimento web,
             dedicado à criação de aplicativos úteis que trazem soluções a qualquer tipo de negócio.
             </h4>

@@ -27,7 +27,7 @@ const Background: React.FC = () => {
   const ellipses = generateEllipses();
 
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
+    <div className="fixed top-0 left-0 w-full h-full min-h-screen -z-10 overflow-hidden">
       {ellipses.map((ellipse, index) => (
         <div
           key={index}
