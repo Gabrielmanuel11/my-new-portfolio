@@ -2,9 +2,6 @@
 
 #root {
   font-family: 'Poppins', sans-serif;
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
   --ellipse-width: 561px;
   --ellipse-height: 1343px;
   --border-color: #E7C0F8;
@@ -79,4 +76,13 @@
 
 .swiper-pagination {
   position: static !important;
+}
+
+/* Dark mode override */
+.dark .swiper-pagination-bullet {
+  background-color: #EBD3F8 !important;
+}
+
+.dark .swiper-pagination-bullet-active {
+  background-color: #EBD3F8 !important;
 }

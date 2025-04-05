@@ -20,7 +20,7 @@ const MobileSwiper = () => {
                 <div className='flex-col'>
                     <div className='bg-[#2F0A42] w-full h-56 rounded-lg'>
                     </div>
-                    <div className='text-left pt-7'>
+                    <div className='text-left pt-7 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
                             Projeto 1
                         </h1>
@@ -35,7 +35,7 @@ const MobileSwiper = () => {
                 <div className='flex-col'>
                     <div className='bg-[#2F0A42] w-full h-56 rounded-lg'>
                     </div>
-                    <div className='text-left pt-7'>
+                    <div className='text-left pt-7 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
                             Projeto 1
                         </h1>
@@ -50,7 +50,7 @@ const MobileSwiper = () => {
                 <div className='flex-col'>
                     <div className='bg-[#2F0A42] w-full h-56 rounded-lg'>
                     </div>
-                    <div className='text-left pt-7'>
+                    <div className='text-left pt-7 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
                             Projeto 1
                         </h1>

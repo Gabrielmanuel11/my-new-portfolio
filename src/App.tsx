@@ -6,20 +6,26 @@ import Header from './components/Header/Header';
 import Welcome from './components/Welcome/Welcome';
 import Footer from './components/Footer/Footer';
 import Project from './components/Projects/Project';
+import { LanguageProvider } from './utils/LanguageContext';
 
 function App() {
   return(
-    <div>
-      <BackgroundPattern/>
-      <Header />
-      <main >
-        <Welcome/>
-        <AboutMe/>
-        <Expirience/>
-        <Project/>
-      </main>
-      <Footer />
-    </div>
+    <div className="dark:bg-black dark:opacity-90 transition-colors duration-500 min-h-screen px-20 mobile:px-0">
+        <div className="max-w-[1280px] mx-auto text-center">
+          <LanguageProvider>
+            <BackgroundPattern/>
+            <Header />
+              <main >
+                <Welcome/>
+                <AboutMe/>
+                <Expirience/>
+                <Project/>
+              </main>
+            <Footer />
+          </LanguageProvider>
+        </div>
+      </div>
+    
   );
 }
 

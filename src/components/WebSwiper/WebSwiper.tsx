@@ -20,7 +20,7 @@ const WebSwiper = () => {
                 <div className='flex'>
                     <div className='bg-[#2F0A42] w-48 h-36 rounded-lg'>
                     </div>
-                    <div className='text-left shrink-[585] pl-4'>
+                    <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
                             Projeto 1
                         </h1>
@@ -32,7 +32,7 @@ const WebSwiper = () => {
                 <div className='flex'>
                     <div className='bg-[#2F0A42] w-48 h-36 rounded-lg'>
                     </div>
-                    <div className='text-left shrink-[585] pl-4'>
+                    <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
                             Projeto 1
                         </h1>

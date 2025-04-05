@@ -19,7 +19,7 @@ const Header = () => {
     <header
       className={`sticky top-0 w-full text-white flex justify-end items-center px-4 h-14 transition-all duration-300 ${
         isScrolled
-          ? " bg-white z-[2] shadow-md"
+          ? " bg-white dark:bg-black z-[2] shadow-md"
           : "bg-transparent"
       }`}
     >
