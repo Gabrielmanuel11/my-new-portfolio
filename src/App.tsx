@@ -7,6 +7,7 @@ import Welcome from './components/Welcome/Welcome';
 import Footer from './components/Footer/Footer';
 import Project from './components/Projects/Project';
 import { LanguageProvider } from './utils/LanguageContext';
+import StackScroll from './components/StackScroll';
 
 function App() {
   return(
@@ -19,6 +20,7 @@ function App() {
                 <Welcome/>
                 <AboutMe/>
                 <Expirience/>
+                <StackScroll/>
                 <Project/>
               </main>
             <Footer />

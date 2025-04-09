@@ -18,7 +18,7 @@ const AboutMe = () => {
        : 'As a software developer, I focus on using logic and creativity as my allies. Currently in the dynamic world of the Web, my experience revolves around Javascript, where I combine some technologies and frameworks such as ReactJs, NodeJs among others to be able to build an end-to-end application as FullStack.'}
          <br /><br />
         
-        { language === 'Portugês' ? 'Sempre buscando criar soluções elegantes, busco constante evolução do desenvolvimento de software. Minha jornada envolve traduzir conceitos em código, criar experiências de usuário perfeitas e ultrapassar constantemente os limites do que é possível.'
+        { language === 'Português' ? 'Sempre buscando criar soluções elegantes, busco constante evolução do desenvolvimento de software. Minha jornada envolve traduzir conceitos em código, criar experiências de usuário perfeitas e ultrapassar constantemente os limites do que é possível.'
          : 'Always seeking to create elegant solutions, I strive to constantly evolve software development. My journey involves translating concepts into code, creating seamless user experiences, and constantly pushing the boundaries of what is possible.'}
       </p>
 
