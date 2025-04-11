@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../utils/LanguageContext";
+import { motion } from "motion/react";
 
 const Welcome = () => {
     const { language } = useLanguage();
@@ -18,6 +19,12 @@ const Welcome = () => {
   }, [words.length]);
 
     return(
+      <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
+      >
         <div className="text-[#2F0A42] p-7">
             <h1 className="font-bold text-[64px] dark:text-[#EBD3F8]">
                 { language === 'Português' ? 'Bem vindo ao meu Mundo!' : 'Welcome to my world!'}
@@ -33,6 +40,7 @@ const Welcome = () => {
             : 'Passionate software developer with a focus on web development, dedicated to creating useful applications that bring solutions to any type of business'}
             </h4>
         </div>
+      </motion.section>
     );
 };
 

@@ -1,16 +1,23 @@
+import { motion } from "motion/react";
 import { useLanguage } from "../../utils/LanguageContext";
 
 const AboutMe = () => {
   const { language } = useLanguage();
 
   const images = [
-    { src: 'src/assets/images/myfamily.jpeg', label: language === 'Português' ? 'Família' : 'Family' },
-    { src: 'src/assets/images/soccer.jpeg', label: language === 'Português' ?  'Futebol' : 'Soccer' },
-    { src: 'src/assets/images/book.jpeg', label: language === 'Português' ? 'Livro Favorito' : 'Favorite Book' },
-    { src: 'src/assets/images/superman.jpg', label: language === 'Português' ? 'Filme Favorito' : 'Favorite Movie' },
+    { src: 'src/assets/myimages/myfamily.jpeg', label: language === 'Português' ? 'Família' : 'Family' },
+    { src: 'src/assets/myimages/soccer.jpeg', label: language === 'Português' ?  'Futebol' : 'Soccer' },
+    { src: 'src/assets/myimages/book.jpeg', label: language === 'Português' ? 'Livro Favorito' : 'Favorite Book' },
+    { src: 'src/assets/myimages/superman.jpg', label: language === 'Português' ? 'Filme Favorito' : 'Favorite Movie' },
   ];
 
   return (
+    <motion.section
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+    viewport={{ once: false, amount: 0.2 }}
+    >
     <div className="text-[#2F0A42] text-center p-7">
       <h1 className="font-bold text-[45px] dark:text-[#EBD3F8]">{ language === 'Português' ? 'SOBRE MIM' : 'ABOUT ME'}</h1>
       <h2 className="text-[#FF9051] text-[16px]">{ language === 'Português' ? 'veja agora' : 'see now'}</h2>
@@ -21,9 +28,14 @@ const AboutMe = () => {
         { language === 'Português' ? 'Sempre buscando criar soluções elegantes, busco constante evolução do desenvolvimento de software. Minha jornada envolve traduzir conceitos em código, criar experiências de usuário perfeitas e ultrapassar constantemente os limites do que é possível.'
          : 'Always seeking to create elegant solutions, I strive to constantly evolve software development. My journey involves translating concepts into code, creating seamless user experiences, and constantly pushing the boundaries of what is possible.'}
       </p>
-
+      
       {/* Grid de Imagens */}
-      <div className="grid grid-cols-4 gap-5 pt-12 place-items-center tablet:grid-cols-2 mobile:grid-cols-1">
+      <motion.div 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
+      className="grid grid-cols-4 gap-5 pt-12 place-items-center smallLaptop:grid-cols-2 mobile:grid-cols-1">
         {images.map((image, index) => (
           <div key={index} className="relative w-[300px] h-[400px] rounded-[12px] overflow-hidden group">
             {/* Imagem */}
@@ -38,8 +50,9 @@ const AboutMe = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
+    </motion.section>
   );
 };
 

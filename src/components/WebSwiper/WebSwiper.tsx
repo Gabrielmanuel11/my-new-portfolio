@@ -1,8 +1,10 @@
 import { Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/swiper-bundle.css';
+import { useLanguage } from "../../utils/LanguageContext";
 
 const WebSwiper = () => {
+    const { language } = useLanguage();
     return (
         <Swiper
             // install Swiper modules
@@ -18,45 +20,62 @@ const WebSwiper = () => {
         <SwiperSlide>
             <div className='grid grid-cols-2 gap-5 h-[40vh] pt-8'>
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/portifolio-financeiro.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
+                    <a href="https://github.com/Gabrielmanuel11/Myfinances">
+                        <div className='bg-[url(public/images/portifolio-financeiro.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Controle financeiro
+                           { language === 'Português' ? 'Controle financeiro' : 'Financial control'} 
                         </h1>
-                        <p>O objetivo desse projeto foi utilizar o aprendizado de hooks do React,
-                            implementando de forma correta</p>
+                        <p> { language === 'Português' ? 'O objetivo desse projeto foi utilizar o aprendizado de hooks do React, implementando de forma correta.' 
+                        : 'The goal of this project was to use the knowledge gained from React hooks, implementing them correctly.'}</p>
                     </div>
                 </div>
                 
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/calc.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
+                    <a href="https://github.com/Gabrielmanuel11/Calc.js">
+                        <div className='bg-[url(public/images/calc.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Calculadora
+                        { language === 'Português' ? 'Calculadora' : 'Calculator'}
                         </h1>
-                        <p>Esse projeto foi utlizado para aprender lógica de programação na prática, trazendo uma solução para o mundo real</p>
+                        <p>
+                            { language === 'Português' ? 'Esse projeto foi utlizado para aprender lógica de programação na prática, trazendo uma solução para o mundo real.' 
+                            : 'This project was used to learn programming logic in practice, bringing a solution to the real world.'} 
+                        </p>
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/portifolio-to-do-list.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
+                    <a href="https://github.com/Gabrielmanuel11/to-do-list">
+                        <div className='bg-[url(public/images/portifolio-to-do-list.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Lista de tarefas
+                        { language === 'Português' ? 'Lista de tarefas' : 'To do list'} 
                         </h1>
-                        <p>O foco desse projeto foi na utilização de um banco de dados não relacional, e utilização de REST para requisições</p>
+                        <p>
+                           {language === 'Português' ? 'O foco desse projeto foi na utilização de um banco de dados não relacional, e utilização de REST para requisições.' 
+                           : 'The focus of this project was on using a non-relational database, and using REST for requests.'} 
+                        </p>
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/tick-tack-toe.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
+                    <a href="https://github.com/Gabrielmanuel11/JVelha">
+                        <div className='bg-[url(public/images/tick-tack-toe.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Jogo da velha
+                        { language === 'Português' ? 'Jogo da velha' : 'Tic Tac Toe'} 
                         </h1>
-                        <p>Neste projeto o propósito foi atingir o dominío do DOM com o JavaScript e o HTML</p>
+                        <p>
+                            { language === 'Português' ? 'Neste projeto o propósito foi atingir o dominío do DOM com o JavaScript e o HTML.' 
+                            : 'In this project the purpose was to achieve mastery of the DOM with JavaScript and HTML.'}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -64,34 +83,49 @@ const WebSwiper = () => {
           <SwiperSlide>
             <div className='grid grid-cols-2 gap-5 h-[40vh] pt-8 mobile:hidden'>
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/javascript.jpg)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
-                    <div className='text-left shrink-[585] pl-4'>
+                    <a href="https://github.com/Gabrielmanuel11/JavaScript-Practice">
+                        <div className='bg-[url(public/images/javascript.jpg)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
+                    <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Prática JavaScript
+                        { language === 'Português' ? 'Prática JavaScript' : 'JavaScript practice'}
                         </h1>
-                        <p>Este é um repositório que contém práticas de assuntos base da linguagem mencionada.</p>
+                        <p>
+                            { language === 'Português' ? 'Este é um repositório que contém práticas de assuntos base da linguagem mencionada.' 
+                            : 'This is a repository that contains practices on the basic subjects of the mentioned language.'} 
+                        </p>
                     </div>
                 </div>
                 
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/typescript.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
-                    <div className='text-left shrink-[585] pl-4'>
+                    <a href="https://github.com/Gabrielmanuel11/TypeScript-Practice">
+                        <div className='bg-[url(public/images/typescript.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
+                    <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Prática TypeScript
+                        { language === 'Português' ? 'Prática TypeScript' : 'TypeScript practice'} 
                         </h1>
-                        <p>Este é um repositório que contém práticas de assuntos base da linguagem mencionada.</p>
+                        <p>
+                            { language === 'Português' ? 'Este é um repositório que contém práticas de assuntos base da linguagem mencionada.' 
+                            : 'This is a repository that contains practices on the basic subjects of the mentioned language.'}
+                        </p>
                     </div>
                 </div>
                 <div className='flex'>
-                    <div className='bg-[url(src/assets/images/lp-bee.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
-                    </div>
-                    <div className='text-left shrink-[585] pl-4'>
+                    <a href="https://github.com/Gabrielmanuel11/LMS-School">
+                        <div className='bg-[url(public/images/lp-bee.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        </div>
+                    </a>
+                    <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
                         <h1 className='font-bold text-[16px]'>
-                            Landing Page - Escola de Inglês
+                        { language === 'Português' ? 'Landing Page - Escola de Inglês' : 'Landing Page - English School'}
                         </h1>
-                        <p>Projeto pessoal para que pessoas que tenham interesse em Inglês se cadastrem.</p>
+                        <p>
+                            { language === 'Português' ? 'Projeto pessoal para que pessoas que tenham interesse em Inglês se cadastrem.' 
+                            : 'Personal project for people interested in English to register.'}
+                        </p>
                     </div>
                 </div>
                 

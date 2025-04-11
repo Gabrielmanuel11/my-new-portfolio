@@ -10,58 +10,58 @@ import { useLanguage } from "../utils/LanguageContext";
 const techLogos = [
     {
       name: "JavaScript",
-      srcLight: "src/assets/images/tech/javascript-light.svg",
-      srcDark: "src/assets/images/tech/javascript-dark.svg",
+      srcLight: "src/assets/tech/javascript-light.svg",
+      srcDark: "src/assets/tech/javascript-dark.svg",
     },
     {
       name: "TypeScript",
-      srcLight: "src/assets/images/tech/typescript-light.svg",
-      srcDark: "src/assets/images/tech/typescript-dark.svg",
+      srcLight: "src/assets/tech/typescript-light.svg",
+      srcDark: "src/assets/tech/typescript-dark.svg",
     },
     {
       name: "React",
-      srcLight: "src/assets/images/tech/reactjs-light.svg",
-      srcDark: "src/assets/images/tech/reactjs-dark.svg",
+      srcLight: "src/assets/tech/reactjs-light.svg",
+      srcDark: "src/assets/tech/reactjs-dark.svg",
     },
     {
       name: "Node.js",
-      srcLight: "src/assets/images/tech/nodejs-light.svg",
-      srcDark: "src/assets/images/tech/nodejs-dark.svg",
+      srcLight: "src/assets/tech/nodejs-light.svg",
+      srcDark: "src/assets/tech/nodejs-dark.svg",
     },
     {
       name: "Next.js",
-      srcLight: "src/assets/images/tech/nextjs-light.svg",
-      srcDark: "src/assets/images/tech/nextjs-dark.svg",
+      srcLight: "src/assets/tech/nextjs-light.svg",
+      srcDark: "src/assets/tech/nextjs-dark.svg",
     },
     {
       name: "NestJS",
-      srcLight: "src/assets/images/tech/nestjs-light.svg",
-      srcDark: "src/assets/images/tech/nestjs-dark.svg",
+      srcLight: "src/assets/tech/nestjs-light.svg",
+      srcDark: "src/assets/tech/nestjs-dark.svg",
     },
     {
       name: "PostgreSQL",
-      srcLight: "src/assets/images/tech/postgresql-light.svg",
-      srcDark: "src/assets/images/tech/postgresql-dark.svg",
+      srcLight: "src/assets/tech/postgresql-light.svg",
+      srcDark: "src/assets/tech/postgresql-dark.svg",
     },
     {
       name: "Tailwind CSS",
-      srcLight: "src/assets/images/tech/tailwind-light.svg",
-      srcDark: "src/assets/images/tech/tailwind-dark.svg",
+      srcLight: "src/assets/tech/tailwind-light.svg",
+      srcDark: "src/assets/tech/tailwind-dark.svg",
     },
     {
       name: "Docker",
-      srcLight: "src/assets/images/tech/docker-light.svg",
-      srcDark: "src/assets/images/tech/docker-dark.svg",
+      srcLight: "src/assets/tech/docker-light.svg",
+      srcDark: "src/assets/tech/docker-dark.svg",
     },
     {
         name: "PHP",
-        srcLight: "src/assets/images/tech/php-light.svg",
-        srcDark: "src/assets/images/tech/php-dark.svg",
+        srcLight: "src/assets/tech/php-light.svg",
+        srcDark: "src/assets/tech/php-dark.svg",
     },
     {
         name: "Python",
-        srcLight: "src/assets/images/tech/python-light.svg",
-        srcDark: "src/assets/images/tech/python-dark.svg",
+        srcLight: "src/assets/tech/python-light.svg",
+        srcDark: "src/assets/tech/python-dark.svg",
     },
   ];
   
@@ -93,7 +93,7 @@ const TechStackScroll = () => {
         { language === 'Português' ? 'TECNOLOGIAS' : 'TECHNOLOGIES'}
       </motion.h2>
 
-      <div className="px-24 mobile:px-8 tablet:px-16 container mx-auto my-8">
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 container mx-auto my-8">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={40}
@@ -112,12 +112,12 @@ const TechStackScroll = () => {
             640: { slidesPerView: 2.5 },
             320: { slidesPerView: 2.3 },
           }}
-          className="w-full !overflow-visible"
+          className="!w-full !max-w-full mobile:w-[300px] overflow-visible"
         >
           {duplicatedLogos.map((tech, index) => (
             <SwiperSlide
             key={`${tech.name}-${index}`}
-            className="flex justify-center w-auto"
+            className="flex justify-center items-center"
           >
             {/* Light mode logo */}
             <img
