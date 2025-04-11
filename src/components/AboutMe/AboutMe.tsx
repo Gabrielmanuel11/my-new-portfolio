@@ -5,10 +5,10 @@ const AboutMe = () => {
   const { language } = useLanguage();
 
   const images = [
-    { src: 'src/assets/myimages/myfamily.jpeg', label: language === 'Português' ? 'Família' : 'Family' },
-    { src: 'src/assets/myimages/soccer.jpeg', label: language === 'Português' ?  'Futebol' : 'Soccer' },
-    { src: 'src/assets/myimages/book.jpeg', label: language === 'Português' ? 'Livro Favorito' : 'Favorite Book' },
-    { src: 'src/assets/myimages/superman.jpg', label: language === 'Português' ? 'Filme Favorito' : 'Favorite Movie' },
+    { src: 'public/assets/myimages/myfamily.jpeg', label: language === 'Português' ? 'Família' : 'Family' },
+    { src: 'public/assets/myimages/soccer.jpeg', label: language === 'Português' ?  'Futebol' : 'Soccer' },
+    { src: 'public/assets/myimages/book.jpeg', label: language === 'Português' ? 'Livro Favorito' : 'Favorite Book' },
+    { src: 'public/assets/myimages/superman.jpg', label: language === 'Português' ? 'Filme Favorito' : 'Favorite Movie' },
   ];
 
   return (
