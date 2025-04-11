@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../utils/LanguageContext";
+import { motion } from "motion/react";
 
 const Welcome = () => {
-    const words = ['Profissionalmente.', 'Divertidamente.', 'Apaixonadamente.', 'Todos os dias.']; // Words to rotate
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const { language } = useLanguage();
+
+    const words = language === 'Português' ? ['Profissionalmente.', 'Divertidamente.', 'Apaixonadamente.', 'Todos os dias.']
+    : ['Professionally.', 'Playfully.', 'Passionately.', 'Every day.'];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,21 +19,28 @@ const Welcome = () => {
   }, [words.length]);
 
     return(
-        <div className="absolute h-[103px] w-[401px] left-4 top-[107px] text-[#2F0A42]">
-            <h1 className="font-bold text-[24px]">
-                Bem vindo ao meu Mundo!
+      <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
+      >
+        <div className="text-[#2F0A42] p-7">
+            <h1 className="font-bold text-[64px] dark:text-[#EBD3F8]">
+                { language === 'Português' ? 'Bem vindo ao meu Mundo!' : 'Welcome to my world!'}
             </h1>
-            <h2 className="font-semibold text-[23px]">
-                Eu programo,<br />
-                <span className="text-gradient text-[26px] word-rotator">
+            <h2 className="inline-flex font-semibold text-[32px] mobile:block dark:text-[#E1E1E1]">
+                {language === 'Português' ? 'Eu programo' : 'I code'},<br />
+                <span className="text-gradient text-[32px] word-rotator w-[310px] mobile:w-auto mobileMini:text-[24px]">
                     {words[currentIndex]}
                 </span>
             </h2>
-            <h4 className="font-medium">
-            Desenvolvedor de software apaixonado com foco no desenvolvimento web,
-            dedicado à criação de aplicativos úteis que trazem soluções a qualquer tipo de negócio.
+            <h4 className="font-medium text-[20px] dark:text-[#E1E1E1]">
+            { language === 'Português' ? 'Desenvolvedor de software apaixonado com foco no desenvolvimento web, dedicado à criação de aplicativos úteis que trazem soluções a qualquer tipo de negócio.' 
+            : 'Passionate software developer with a focus on web development, dedicated to creating useful applications that bring solutions to any type of business'}
             </h4>
         </div>
+      </motion.section>
     );
 };
 

@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 #root {
   font-family: 'Poppins', sans-serif;
-  margin: 0 auto;
-  text-align: center;
   --ellipse-width: 561px;
   --ellipse-height: 1343px;
   --border-color: #E7C0F8;
@@ -76,4 +76,13 @@
 
 .swiper-pagination {
   position: static !important;
+}
+
+/* Dark mode override */
+.dark .swiper-pagination-bullet {
+  background-color: #EBD3F8 !important;
+}
+
+.dark .swiper-pagination-bullet-active {
+  background-color: #EBD3F8 !important;
 }
