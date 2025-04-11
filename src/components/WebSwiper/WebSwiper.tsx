@@ -21,7 +21,7 @@ const WebSwiper = () => {
             <div className='grid grid-cols-2 gap-5 h-[40vh] pt-8'>
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/Myfinances">
-                        <div className='bg-[url(public/images/portifolio-financeiro.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/portifolio-financeiro.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -35,7 +35,7 @@ const WebSwiper = () => {
                 
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/Calc.js">
-                        <div className='bg-[url(public/images/calc.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/calc.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -50,7 +50,7 @@ const WebSwiper = () => {
                 </div>
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/to-do-list">
-                        <div className='bg-[url(public/images/portifolio-to-do-list.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/portifolio-to-do-list.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -65,7 +65,7 @@ const WebSwiper = () => {
                 </div>
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/JVelha">
-                        <div className='bg-[url(public/images/tick-tack-toe.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/tick-tack-toe.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -84,7 +84,7 @@ const WebSwiper = () => {
             <div className='grid grid-cols-2 gap-5 h-[40vh] pt-8 mobile:hidden'>
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/JavaScript-Practice">
-                        <div className='bg-[url(public/images/javascript.jpg)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/javascript.jpg)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -100,7 +100,7 @@ const WebSwiper = () => {
                 
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/TypeScript-Practice">
-                        <div className='bg-[url(public/images/typescript.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/typescript.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>
@@ -115,7 +115,7 @@ const WebSwiper = () => {
                 </div>
                 <div className='flex'>
                     <a href="https://github.com/Gabrielmanuel11/LMS-School">
-                        <div className='bg-[url(public/images/lp-bee.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
+                        <div className='bg-[url(/images/lp-bee.png)] w-48 h-36 rounded-lg bg-center bg-cover'>
                         </div>
                     </a>
                     <div className='text-left shrink-[585] pl-4 dark:text-[#E1E1E1]'>

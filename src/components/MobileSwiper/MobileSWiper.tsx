@@ -21,7 +21,7 @@ const MobileSwiper = () => {
             <div className='h-auto pt-8'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/Myfinances">
-                        <div className='bg-[url(public/images/portifolio-financeiro.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/portifolio-financeiro.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -38,7 +38,7 @@ const MobileSwiper = () => {
             <div className='h-auto pt-8'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/Calc.js">
-                        <div className='bg-[url(public/images/calc.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/calc.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -55,7 +55,7 @@ const MobileSwiper = () => {
             <div className='hidden h-auto pt-8 mobile:flex'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/to-do-list">
-                        <div className='bg-[url(public/images/portifolio-to-do-list.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/portifolio-to-do-list.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -72,7 +72,7 @@ const MobileSwiper = () => {
             <div className='hidden h-auto pt-8 mobile:flex'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/JVelha">
-                        <div className='bg-[url(public/images/tick-tack-toe.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/tick-tack-toe.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -89,7 +89,7 @@ const MobileSwiper = () => {
             <div className='hidden h-auto pt-8 mobile:flex'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/JavaScript-Practice">
-                        <div className='bg-[url(public/images/javascript.jpg)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/javascript.jpg)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -106,7 +106,7 @@ const MobileSwiper = () => {
             <div className='hidden h-auto pt-8 mobile:flex'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/TypeScript-Practice">
-                        <div className='bg-[url(public/images/typescript.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/typescript.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
@@ -123,7 +123,7 @@ const MobileSwiper = () => {
             <div className='hidden h-auto pt-8 mobile:flex'>
                 <div className='flex-col'>
                     <a href="https://github.com/Gabrielmanuel11/LMS-School">
-                        <div className='bg-[url(public/images/lp-bee.png)] bg-center bg-cover w-full h-56 rounded-lg'>
+                        <div className='bg-[url(/images/lp-bee.png)] bg-center bg-cover w-full h-56 rounded-lg'>
                         </div>
                     </a>
                     <div className='text-left pt-7 dark:text-[#E1E1E1]'>
